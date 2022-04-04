@@ -11,7 +11,7 @@ heart = pd.read_csv(heart_file)
 # print(heart.head())
 
 # Step 2 - A. Transform features | B. Determine x and y axis
-# For testing purposes, do it manually. Otherwise, use sklearn OneHotEncode()
+# For experimenting/learning purposes, do it manually. Otherwise, use sklearn OneHotEncode()
 # encoder = OneHotEncoder(handle_unknown='ignore')
 # encoder.fit(X_data) # this line must be placed after the X_data declaration
 heart["HeartDisease"] = heart["HeartDisease"].replace({'No': 0, 'Yes': 1})
